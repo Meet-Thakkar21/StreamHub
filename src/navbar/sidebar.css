@@ -1,0 +1,47 @@
+/* src/components/Sidebar/Sidebar.css */
+
+.sidebar {
+  width: 15%;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 20px;
+  height: 100vh;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  float: left;
+  margin-top: 0px;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.navbar-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-links a {
+  font-size: 1rem;
+  color: black;
+  text-decoration: none;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-links a .icon {
+  margin-right: 15px;
+  font-size: 1.5rem;
+}
+
+.navbar-links a:hover {
+  background-color: rgb(194, 208, 221);
+}

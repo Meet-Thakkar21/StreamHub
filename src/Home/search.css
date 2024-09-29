@@ -1,0 +1,67 @@
+.searchcomp{
+ 
+  width: 100%;
+  
+}
+
+
+
+
+.video-card-search {
+  width: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin-left: 30px;
+  margin-right: 50px;
+  margin-top: 30px;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+
+.video-card-search:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.video-thumbnail-search img {
+  width: 100%;
+  height: auto;
+}
+
+.video-info-search {
+  padding: 15px;
+}
+
+.video-info-search h3 {
+  margin: 0 0 10px;
+  font-size: 1.2rem;
+}
+
+.video-info-search p {
+  margin: 0;
+  color: #666;
+}
+
+.video-list-search{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.video-info-search p {
+  margin: 5px 0;
+  color: #666;
+  display: flex;
+  align-items: center;
+}
+
+.video-info-search p svg {
+  margin-right: 8px;
+  color: #333; /* Adjust icon color if needed */
+}

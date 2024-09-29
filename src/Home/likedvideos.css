@@ -1,0 +1,73 @@
+/* likedvideos.css */
+.liked-videos-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.NavLike{
+  width: 1500px;
+}
+.content {
+  display: flex;
+  width: 100%;
+}
+
+.liked-videos-section {
+  flex: 1;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  margin-left: 20px;
+}
+
+h1 {
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.video-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.video-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.video-card:hover {
+  transform: scale(1.05);
+}
+
+.video-info {
+  padding: 15px;
+}
+
+.video-info-liked h3 {
+  font-size: 1.2rem;
+  color: #1c321e;
+  margin-bottom: 10px;
+}
+
+.video-info-liked p {
+  color: #666;
+  font-size: 1rem;
+}
+
+.liked-video-card{
+  text-decoration: none;
+}

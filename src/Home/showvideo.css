@@ -1,0 +1,166 @@
+  .show-video-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+  }
+
+  .show-video-content {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    position: relative;
+    transition: width 0.3s ease; 
+  }
+
+  .sidebar-video {
+    position: fixed; /* Changed to fixed to keep it above all content */
+    top: 70px;
+    left: 0;
+    padding-top: 50px;
+    z-index: 1000; /* Increased z-index to ensure it's above the video player */
+    background-color: white; 
+    height: 100%; 
+    width: 250px;
+    display: none;
+  }
+  .video-player {
+    flex: 3;
+    padding: 20px;
+    background-color: #f9f9f9;
+    /* z-index: -1; */
+  }
+
+
+  .video-details {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .video-details p {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #333;
+  }
+
+  .video-details b {
+    font-weight: bold;
+  }
+
+  .social-buttons {
+    margin-top: 20px;
+  }
+
+  .social-button {
+    border: none;
+    background-color: #e0e0e0;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+    
+  }
+
+  .social-button:hover {
+    background-color: #ccc;
+  }
+
+  .recommendations {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    border-left: 1px solid #ddd;
+  }
+
+  .recommendation-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .recommendation-card {
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .recom-title{
+    color:black ;
+  }
+
+
+  .recommendation-thumbnail img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .recommendation-info {
+    margin-left: 10px;
+  }
+
+  .recommendation-info h4 {
+    margin: 0;
+  }
+
+  .recommendation-info p {
+    color: #666;
+  }
+
+  .analytics{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .analytics p{
+    margin: 5px;
+  }
+
+  .togglebtn {
+    background-color: transparent; /* Makes the button transparent */
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    z-index: 999;
+    top: 10px;
+    left: 10px;
+    border: none; /* Removes the default border */
+    border-radius: 15%; /* Makes the button circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Light box shadow effect */
+    cursor: pointer; /* Changes the cursor to a pointer on hover */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+  }
+
+
+  .togglebtn:hover {
+    box-shadow: 0 3px 5px rgba(122, 119, 119, 0.3); /* Slightly darker shadow on hover */
+    transform: scale(1.03); /* Slightly enlarges the button on hover */
+  }
+
+  .social-button.liked.active {
+    background-color: #007bff; /* Highlight color for liked */
+    color: white;
+  }
+
+  .social-button.liked.active:hover {
+    background-color: #0056b3; /* Darker highlight on hover */
+  }
+
+  .social-button.watchlater.active {
+    background-color: #007bff; /* Highlight color for liked */
+    color: white;
+  }
+
+  .social-button.watchlater.active:hover {
+    background-color: #0056b3; /* Darker highlight on hover */
+  }
+
+

@@ -1,0 +1,107 @@
+/* body {
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+  background: url('../images/p1.png'), linear-gradient(135deg, #8b0000, #d32f2f, #f57c00);
+
+} */
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+  padding: 20px;
+  margin-left: 399px;
+  width: 750px;
+   /* background: linear-gradient(135deg, #9b2f36, #6a2323, #aa9c7d);  */
+   background: linear-gradient(135deg, #a02a2a, #d32f2f, #f57c00);}
+
+.signup-header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.signup-form {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  width: 450px;
+  backdrop-filter: blur(10px);
+  text-align: center;
+}
+
+.signup-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.signup-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.signup-input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  outline: none;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.signup-button {
+  width: 100%;
+  padding: 12px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.signup-button:hover {
+  background: #0056b3;
+}
+
+.signup-footer {
+  margin-top: 15px;
+  color: white;
+}
+
+.signup-footer a {
+  color:rgb(90, 47, 163)  ;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signup-footer a:hover {
+  text-decoration: underline;
+}
